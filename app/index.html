@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="screen1">
+
+            <h1>Jogo da adivinhação</h1>
+            <p>Adivinhe o número entre 0 e 10</p>
+            <h2 id="mensagem_erro"></h2>
+
+            <form id="enviar_numero">
+                <input id="inputNumber" min="0" type="number" />
+                <button id="btAttempt" type="submit">Tentar</button>
+            </form>
+        </div>
+
+        <div class="screen2">
+
+            <h2 id="mensagem"></h2>
+            <button id="btTry">Jogar novamente</button>
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
