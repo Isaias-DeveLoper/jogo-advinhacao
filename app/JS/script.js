@@ -15,19 +15,19 @@ $(document).ready(function () {
 
         let numeroDigitado = $("#inputNumber").val();
 
-        if (numeroDigitado == numeroAleatorio) {
-            $('#mensagem_erro').text(``);
-            $('#mensagem').text(`Você acertou em ${tentativas} tentativas!`);
-            $('input').val('');
-            $('.screen1').hide();
-            $('.screen2').show();
-            numeroAleatorio = 0;
-            tentativas = 0;
-        } else {
-            tentativas += 1;
-            $('#mensagem_erro').text(`Você errou! Tente novamente.`);
-            $('input').val('');
-        }
+            if (numeroDigitado == numeroAleatorio) {
+                $('#mensagem_erro').text(``);
+                $('#mensagem').text(`Você acertou em ${tentativas} tentativas!`);
+                $('input').val('');
+                $('.screen1').hide();
+                $('.screen2').show();
+                numeroAleatorio = 0;
+                tentativas = 0;
+            } else {
+                tentativas += 1;
+                $('#mensagem_erro').text(`Você errou! Tente novamente.`);
+                $('input').val('');
+            }
     })
 
     $('#btTry').click(function () {
